@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Ready Setup</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assests/bootstrap/bootstrap.min.css">
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="assests/css/style.css">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="assests/css/all.min.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center display-5 p-5 border-dotted border-3 mb-4">
+                <span class="bookmark">Bookmarker</span>
+            </h1>
+            <h2 class="text-center">
+                <span>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </span>
+            </h2>
+
+            <div class="form-area d-flex flex-column mb-4">
+                <label class="form-label" for="name"><i class="fa-solid fa-book"></i> Site Name</label>
+                <input id="name" class="form-control mb-2" type="text" placeholder="Bookmark Name">
+
+                <label class="form-label" for="url"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input id="url" class="form-control mb-4" type="url" placeholder="Website Url">
+
+
+
+                <div class="d-grid gap-2 d-md-block mx-auto mb-4">
+                    <button id="submit" class="btn btn-danger" type="submit">Submit</button>
+                    <button id="update" class="btn btn-warning" type="submit">Update</button>
+                </div>
+            </div>
+
+            <table class="table table-striped text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Website Name</th>
+                        <th scope="col">Visit</th>
+                        <th scope="col">Update</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                    <!-- <tr>
+                        <th scope="row">this</th>
+                        <td><a href="${bookMarks[i].url}"></a></td>
+                        <td><button class="btn btn-success"><i class="fa-solid fa-eye"></i> Visit</button></td>
+                        <td><button class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Update</button></td>
+                        <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">this</th>
+                        <td><a href="${bookMarks[i].url}"></a></td>
+                        <td><button class="btn btn-success"><i class="fa-solid fa-eye"></i> Visit</button></td>
+                        <td><button class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Update</button></td>
+                        <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">this</th>
+                        <td><a href="${bookMarks[i].url}"></a></td>
+                        <td><button class="btn btn-success"><i class="fa-solid fa-eye"></i> Visit</button></td>
+                        <td><button class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Update</button></td>
+                        <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr>
+                </tbody> -->
+            </table>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-3">
+                    <div class="modal-header border-bottom-0">
+                        <i class="fa-solid fa-circle me-2 fs-5 text-danger"></i>
+                        <i class="fa-solid fa-circle me-2 fs-5 text-warning"></i>
+                        <i class="fa-solid fa-circle fs-5 text-success"></i>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fw-semibold">
+                        <p class="fs-5">Site Name or Url is not valid, Please follow the <br /> rules below :</p>
+                        <p class="fw-medium fs-6"><i class="fa-regular fa-circle-right text-danger"></i> Site name must contain at least 3 characters</p>
+                        <p class="fw-medium fs-6"><i class="fa-regular fa-circle-right text-danger"></i> Site URL must be a valid one</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assests/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="assests/js/index.js"></script>
+    </body>
+
+</html>

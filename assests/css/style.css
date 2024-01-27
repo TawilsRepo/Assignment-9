@@ -1,0 +1,71 @@
+:root {
+    --header-font: 'Pacifico', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+h1 {
+    font-family: var(--header-font);
+}
+
+h2 span{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 i{
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(247, 236, 222);
+}
+
+.border-dotted {
+    --bs-border-style: dotted;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-black) !important;
+    border-bottom-width: 2px !important;
+
+}
+
+.bookmark {
+    position: relative;
+}
+
+.bookmark:hover::after {
+    height: 40%;
+}
+
+.bookmark::after {
+    content: '';
+    background-color: #fec260;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    bottom: 15px;
+    z-index: -1;
+    transition: height 350ms;
+}
+
+.form-area{
+    border-bottom: 3px dotted black;
+}
